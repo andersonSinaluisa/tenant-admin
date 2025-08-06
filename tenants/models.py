@@ -8,6 +8,7 @@ from .infrastructure.persistence.logo_django_model import TenantLogo
 from .infrastructure.persistence.almacenamiento_django_model import TenantAlmacenamiento
 from .infrastructure.persistence.auditoria_django_model import TenantAuditoria
 
+
 __all__ = [
     'Tenant',
     'TenantContacto',
@@ -18,4 +19,5 @@ __all__ = [
     'TenantLogo',
     'TenantAlmacenamiento',
     'TenantAuditoria',
+
 ]

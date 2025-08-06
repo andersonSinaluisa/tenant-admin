@@ -11,6 +11,7 @@ from tenants.infrastructure.rest.views.almacenamiento_view import Almacenamiento
 from tenants.infrastructure.rest.views.auditoria_view import AuditoriaViewSet
 
 
+
 router = DefaultRouter()
 router.register(r'tenants', TenantViewSet, basename='tenant')
 router.register(r'planes', PlanViewSet, basename='plan')
@@ -69,3 +70,5 @@ urlpatterns = [
          AuditoriaViewSet.as_view({'get': 'retrieve', 'delete': 'destroy'}),
          name='tenant-auditoria-detail'),
 ]
+
+
